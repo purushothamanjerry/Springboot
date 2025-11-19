@@ -23,4 +23,7 @@ public class AuthCon {
     public String login(@RequestBody User user){
         return authService.login(user);
     }
+    @GetMapping("/test")
+    public String test(){
+        return "hello world";
 }
