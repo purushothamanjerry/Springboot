@@ -1,4 +1,4 @@
-package com.example.Authentication.Controller;
+package com.example.Authentication.Controller; // keep this if it matches your project package
 
 import com.example.Authentication.Entity.User;
 import com.example.Authentication.Service.AuthService;
@@ -23,7 +23,9 @@ public class AuthCon {
     public String login(@RequestBody User user){
         return authService.login(user);
     }
+
     @GetMapping("/test")
-    public String test(){
+    public String test() {
         return "hello world";
+    }
 }
